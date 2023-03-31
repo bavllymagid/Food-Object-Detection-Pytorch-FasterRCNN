@@ -105,15 +105,15 @@ def main():
 
     # Uncomment the following lines to convert dataset's
     # folder structure to the appropriate one. 
-    """
-    old_root = "../UECFOOD100"
+    
+    old_root = "/kaggle/input/uecfood100/UECFOOD100"
     # Copy all images and categories.txt file the a new dir
     convert_dataset(old_root, root)
     # Collect all the bbox information in a dataframe
     bbox_info = merge_info(old_root)
     # Save the dataframe as a .csv file
     bbox_info.to_csv(os.path.join(root,'bbox.csv'), index = False)
-    """
+    
     # All images should be located at the same directory 
     # (ie. UECFOOD100merged) without any subdirs. The file 
     # which contains the labels of the various classes, named 
